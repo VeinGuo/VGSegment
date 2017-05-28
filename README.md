@@ -47,6 +47,18 @@ class ViewController: UIViewController, VGSegmentDelegate{
 
 ## Installation
 - Download VGSegment. Move to your project.
+- Cocoapods
+
+```
+pod "VGSegment"
+```
+
+- Carthage
+
+```
+github "VeinGuo/Pastel" ~> 1.0
+```
+
 ## Version
-1.0.0 Release (05/28/2017)
+1.0 Release (05/28/2017)
 
