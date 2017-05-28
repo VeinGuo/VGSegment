@@ -1,5 +1,8 @@
 # VGSegment
+
 A segment menu with line animation
+---
+
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/VeinGuo/VGSegment/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/Pastel.svg?style=flat)](https://github.com/VeinGuo/VGSegment)
@@ -47,12 +50,6 @@ class ViewController: UIViewController, VGSegmentDelegate{
 
 ## Installation
 - Download VGSegment. Move to your project.
-- Cocoapods
-
-```
-pod "VGSegment"
-```
-
 - Carthage
 
 ```
