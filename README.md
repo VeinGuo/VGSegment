@@ -54,6 +54,8 @@ class ViewController: UIViewController, VGSegmentDelegate{
 - Cocoapods
 
 ```
+platform :ios, ‘8.0’
+use_frameworks!
 pod "VGSegment"
 ```
 
