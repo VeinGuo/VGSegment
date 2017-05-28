@@ -56,7 +56,7 @@ pod "VGSegment"
 - Carthage
 
 ```
-github "VeinGuo/Pastel" ~> 1.0
+github "VeinGuo/VGSegment" ~> 1.0
 ```
 
 ## Version
