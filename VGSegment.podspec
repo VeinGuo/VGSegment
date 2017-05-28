@@ -10,10 +10,9 @@ Pod::Spec.new do |s|
   s.author       = { "VeinGuo" => "https://github.com/VeinGuo" }
   s.ios.deployment_target = "8.0"
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "git@github.com:VeinGuo/VGSegment.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/VeinGuo/VGSegment.git", :tag => s.version }
   s.source_files = 'VGSegment/**/*.*'
   s.requires_arc = true
-  s.framework  = "UIKit"
 
 end
 

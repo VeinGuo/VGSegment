@@ -50,6 +50,13 @@ class ViewController: UIViewController, VGSegmentDelegate{
 
 ## Installation
 - Download VGSegment. Move to your project.
+
+- Cocoapods
+
+```
+pod "VGSegment"
+```
+
 - Carthage
 
 ```
