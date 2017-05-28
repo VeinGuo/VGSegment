@@ -1,22 +1,14 @@
-# VGSegment
-A segment menu with line animation
-![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
-[![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/VeinGuo/VGSegment/blob/master/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/Pastel.svg?style=flat)](https://github.com/VeinGuo/VGSegment)
+//
+//  ViewController.swift
+//  Example
+//
+//  Created by Vein on 2017/5/26.
+//  Copyright © 2017年 Vein. All rights reserved.
+//
 
-![demo1](https://github.com/VeinGuo/VGSegment/blob/master/demo1.gif)
+import UIKit
+import VGSegment
 
-![demo2](https://github.com/VeinGuo/VGSegment/blob/master/demo2.gif)
-
-## Requirements
-
-- Swift 3 
-- iOS 8.0+ 
-- XCode 8
-
-## Usage
-
-```swift
 class ViewController: UIViewController, VGSegmentDelegate{
 
     override func viewDidLoad() {
@@ -43,10 +35,4 @@ class ViewController: UIViewController, VGSegmentDelegate{
     }
 
 }
-```
-
-## Installation
-- Download VGSegment. Move to your project.
-## Version
-1.0.0 Release (05/28/2017)
 
