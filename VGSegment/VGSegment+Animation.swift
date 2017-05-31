@@ -9,7 +9,7 @@
 import UIKit
 // move animation
 extension VGSegment {
-    func moveSelectionIndicator(_ indicator: UIView, fromeLabel: UILabel, toLabel: UILabel) {
+    func moveSelectionIndicator(_ indicator: UIView, fromeLabel: UILabel, toLabel: UILabel, animated: Bool) {
         
         let normalTitleColor = configuration.normalTitleColor
         let selectedTitleColor = configuration.selectedTitleColor
@@ -32,29 +32,44 @@ extension VGSegment {
         
         switch style {
         case .line:
-            UIView.animate(withDuration: animationDuration, animations: {
-                indicator.frame.origin.x = toLabel.frame.origin.x
-                indicator.frame.size.width = toLabel.frame.width
-            })
-        case .caterpillarLines:
-            if fromeFrame.origin.x < toFrame.origin.x {
-                UIView.animate(withDuration: animationDuration, delay: 0, options: .curveLinear, animations: {
-                    indicator.frame.size.width = fromeFrame.width + toFrame.width
-                }, completion: { (completion) in
-                    UIView.animate(withDuration: animationDuration, animations: {
-                        indicator.frame.size.width =  toFrame.width
-                        indicator.frame.origin.x = toFrame.origin.x
-                    })
+            if animated {
+                UIView.animate(withDuration: animationDuration, animations: {
+                    indicator.frame.origin.x = toLabel.frame.origin.x
+                    indicator.frame.size.width = toLabel.frame.width
                 })
             } else {
-                UIView.animate(withDuration: animationDuration, delay: 0, options: .curveLinear, animations: {
-                    indicator.frame.origin.x = toFrame.origin.x
-                    indicator.frame.size.width = fromeFrame.width + toFrame.width
-                }, completion: { (completion) in
-                    UIView.animate(withDuration: animationDuration, animations: {
-                        indicator.frame.size.width =  toFrame.width
+                indicator.frame.origin.x = toLabel.frame.origin.x
+                indicator.frame.size.width = toLabel.frame.width
+            }
+            
+        case .caterpillarLines:
+            if animated {
+                if fromeFrame.origin.x < toFrame.origin.x {
+                    
+                    UIView.animate(withDuration: animationDuration, delay: 0, options: .curveLinear, animations: {
+                        indicator.frame.size.width = fromeFrame.width + toFrame.width
+                    }, completion: { (completion) in
+                        UIView.animate(withDuration: animationDuration, animations: {
+                            indicator.frame.size.width =  toFrame.width
+                            indicator.frame.origin.x = toFrame.origin.x
+                        })
                     })
-                })
+                    
+                } else {
+                    
+                    UIView.animate(withDuration: animationDuration, delay: 0, options: .curveLinear, animations: {
+                        indicator.frame.origin.x = toFrame.origin.x
+                        indicator.frame.size.width = fromeFrame.width + toFrame.width
+                    }, completion: { (completion) in
+                        UIView.animate(withDuration: animationDuration, animations: {
+                            indicator.frame.size.width =  toFrame.width
+                        })
+                    })
+                    
+                }
+            } else {
+                indicator.frame.origin.x = toLabel.frame.origin.x
+                indicator.frame.size.width = toLabel.frame.width
             }
         }
     }

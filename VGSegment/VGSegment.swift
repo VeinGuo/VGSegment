@@ -77,7 +77,7 @@ extension VGSegment {
                               max(0, scrollView.contentSize.width - bounds.width))
             scrollView.setContentOffset(CGPoint(x:offsetX, y: 0), animated: true)
             // move
-            moveSelectionIndicator(indicator, fromeLabel: preSelectLabel, toLabel: selectLabel)
+            moveSelectionIndicator(indicator, fromeLabel: preSelectLabel, toLabel: selectLabel, animated: animated)
             selectIndex = index
             delegate?.didSelectAtIndex?(index)
             configuration.segmentSelectIndex = index
