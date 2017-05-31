@@ -4,8 +4,10 @@ A segment menu with line animation
 
 
 ![Swift](https://img.shields.io/badge/Swift-3.0-orange.svg)
+[![build](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)](http://cocoadocs.org/docsets/VGSegment/1.0/)
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/VeinGuo/VGSegment/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/Pastel.svg?style=flat)](https://github.com/VeinGuo/VGSegment)
+[![pod](https://img.shields.io/badge/pod-v1.0.1-red.svg)](http://cocoadocs.org/docsets/VGSegment/1.0/)
 
 ![demo1](https://github.com/VeinGuo/VGSegment/blob/master/demo1.gif)
 
@@ -62,9 +64,9 @@ pod "VGSegment"
 - Carthage
 
 ```
-github "VeinGuo/VGSegment" ~> 1.0
+github "VeinGuo/VGSegment" ~> 1.0.1
 ```
 
 ## Version
-1.0 Release (05/28/2017)
-
+- 1.0 Release (05/28/2017)
+- 1.0.1 Release (05/31/2017)
