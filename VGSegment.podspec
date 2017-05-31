@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 # Guide: https://github.com/VeinGuo/VGSegment
 
   s.name         = "VGSegment"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "A segment menu with line animation"
   s.license      = { :type => 'MIT License', :file => 'LICENSE' }
   s.homepage     = "https://github.com/VeinGuo/VGSegment"
