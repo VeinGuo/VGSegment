@@ -63,6 +63,15 @@ open class VGSegment: UIView{
         fatalError("init(coder:) has not been implemented")
     }
     
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        scrollView.frame = bounds
+        let selectLabel = titleLabels[selectIndex]
+        let offsetX = min(max(0, selectLabel.center.x - bounds.width / 2),
+                          max(0, scrollView.contentSize.width - bounds.width))
+        scrollView.setContentOffset(CGPoint(x:offsetX, y: 0), animated: false)
+    }
+    
 }
 
 //MARK: - public
