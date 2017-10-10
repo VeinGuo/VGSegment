@@ -9,7 +9,7 @@
 import UIKit
 
 extension VGSegment : UIGestureRecognizerDelegate {
-    func handleSegmentTap(_ gestureRecognizer : UITapGestureRecognizer) {
+   @objc func handleSegmentTap(_ gestureRecognizer : UITapGestureRecognizer) {
         let tappedPointX : CGFloat = gestureRecognizer.location(in: self).x + scrollView.contentOffset.x
         
         for (i, label) in titleLabels.enumerated() {

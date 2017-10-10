@@ -99,7 +99,7 @@ extension VGSegment {
     
     func labelSizeToFit(_ text: String, font: UIFont) -> CGFloat {
         let titleText = text as String
-        let width = titleText.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil).width
+        let width = titleText.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil).width
         return width
     }
 
