@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/VeinGuo/VGSegment.git", :tag => s.version }
-  s.source_files = 'VGSegment/**/*.*'
+  s.source_files = 'VGSegment/**/*.{h,m,swift}'
   s.requires_arc = true
 
 end
