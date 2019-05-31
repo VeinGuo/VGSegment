@@ -15,9 +15,9 @@ A segment menu with line animation
 
 ## Requirements
 
-- Swift 3 
+- Swift 5 
 - iOS 8.0+ 
-- XCode 8
+- XCode 10.2
 
 ## Usage
 
@@ -71,5 +71,4 @@ github "VeinGuo/VGSegment" ~> 1.0.1
 - 1.0 Release (05/28/2017)
 - 1.0.1 Release (05/31/2017)
 - 1.0.2 fix horizontal and vertical autolayout
-
 
